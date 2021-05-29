@@ -7,4 +7,9 @@
   <p>Click this link if you want to head straight to the therapy site.</p>
   <a href="https://www.psychologytoday.com/us/therapists">Find a therapist:</a>
   <p>Or, take a super quick survey to find therapists near you.</p>
-<body>
+  <script>
+    var zipCode = prompt("Please enter your zip code:", "Enter your aip code"); 
+    var zipCodeLink = "https://www.psychologytoday.com/us/therapists?search=" + zipCode;
+    document.write('<a href="' + zipCodeLink + '">Click to find therapists near you</a>');
+  </script>
+</body>
