@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <head>
   <title>Welcome to Therahealth - Krish and Sahil.</title>
+  
+  <script>
+  function findTherapist(){
+    var zipCode = document.getElementById("zipCode").value;
+    var zipCodeLink = "https://www.psychologytoday.com/us/therapists?search=" + zipCode;
+    document.write('<a href="' + zipCodeLink + '">Click to find therapists near you</a>');
+    window.location.href=zipCodeLink;
+  }
+  </script>
 <head>
 
 <body>
@@ -8,11 +17,6 @@
   <a href="https://www.psychologytoday.com/us/therapists">Find a therapist:</a>
   <p>Or, take a super quick survey to find therapists near you.</p>
   <input id="zipeCode" placeholder="Enter your zipcode">
-  <br><br><br>
-  <button id = "zipCodeButton">Find some therapists near me!</button>
-  <script>  
-    
-    var zipCodeLink = "https://www.psychologytoday.com/us/therapists?search=" + zipCode;
-    document.write('<a href="' + zipCodeLink + '">Click to find therapists near you</a>');
-  </script>
+  <br><br>
+  <button onclick="findTherapist()" id = "zipCodeButton">Find some therapists near me!</button>
 </body>
