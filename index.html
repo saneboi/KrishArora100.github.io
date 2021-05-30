@@ -2,38 +2,31 @@
 <html>
 
 <head>
-  <title>Welcome to Therahealth - Krish and Sahil.</title>
-  
-  <script>
-  function findTherapist(){
-    var zipCode = document.getElementById("zipCode").value;
-    var zipCodeLink = "https://www.psychologytoday.com/us/therapists?search=" + zipCode;
-    document.write('<a href="' + zipCodeLink + '">Click to find therapists near you</a>');
-    window.location.href=zipCodeLink;
-  }
-  </script>
-  
   <title>Send Mail</title>
-  <script> src=
-      "https://KrishArora100.github.io">
+  <title>Welcome to Therahealth - Krish and Sahil.</title>
+  <script src=
+    "index.js">
   </script>
-  
-  <script type="text/javascript">
-    function sendEmail(){
-      Email.send({
-        Host: "smtp.gmail.com",
+<script src=
+	"https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script type="text/javascript">
+	function sendEmail() {
+	Email.send({
+		Host: "smtp.gmail.com",
         Username: "krarora@gmail.com",
         Password: "Thisistest1",
         To: 'meenakshi17@gmail.com',
         From: "krarora100@gmail.com",
         Subject: "Someone has reached out to you.",
         Body: "You have recieved a email from someone who would like help.",
-      })
-        .then(function (message) {
-           alert("mail sent successfully! You should recive a response soon!")
-        });
-    }
-  </script>  
+	})
+		.then(function (message) {
+		alert("mail sent successfully")
+		});
+	}
+</script>
 <head>
 
 <body>
