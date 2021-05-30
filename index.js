@@ -5,18 +5,27 @@
     window.location.href=zipCodeLink;
   }
 
-	function sendEmail() {
-	Email.send({
-		Host: "smtp.gmail.com",
-        Username: "krarora@gmail.com",
-        Password: "Thisistest1",
-        To: 'meenakshi17@gmail.com',
-        From: "krarora100@gmail.com",
-        Subject: "Someone has reached out to you.",
-        Body: "You have recieved a email from someone who would like help.",
-	})
-		.then(function (message) {
-		alert("mail sent successfully")
-		});
-	}
+function sendEmail() {
+Email.send({
+  Host: "smtp.gmail.com",
+  Username: "krarora@gmail.com",
+  Password: "Thisistest1",
+  To: 'meenakshi17@gmail.com',
+  From: "krarora100@gmail.com",
+  Subject: "Someone has reached out to you.",
+  Body: "You have recieved a email from someone who would like help.",
+})
+Email.send({
+  Host: "smtp.gmail.com",
+  Username: "krarora@gmail.com",
+  Password: "Thisistest1",
+  To: 'meenakshi17@gmail.com',
+  From: "krarora100@gmail.com",
+  Subject: "Someone has reached out to you.",
+  Body: "You have recieved a email from someone who would like help.",
+})
+  .then(function (message) {
+  alert("mail sent successfully")
+  });
+}
 
