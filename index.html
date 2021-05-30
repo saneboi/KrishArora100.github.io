@@ -20,18 +20,18 @@
   <script type="text/javascript">
     function sendEmail(){
       alert("About to send!");
-      Email.send{{
+      Email.send({
         Host: "smtp.gmail.com",
         Username: "krarora",
         Password: "Thisistest1",
-        To: "meenakshi17@gmail.com",
+        To: 'meenakshi17@gmail.com',
         From: "krarora100@gmail.com,
         Subject: "Someone has reached out to you."
         Body: "You have recieved a email from someone who would like help."
-      }}
+      })
         .then(function (message) {
            alert("mail sent successfully! You should recive a response soon!");
-        }}
+        })
     }
   </script>  
 <head>
